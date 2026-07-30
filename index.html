@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dispatch — post explorer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+  <nav class="navbar">
+    <div class="logo-group">
+      <span class="logo-name">Dispatch</span>
+      <span class="logo-tagline">/ post explorer</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Search posts...">
+  </nav>
+
+  <main class="main">
+
+    <aside id="postList">
+
+ 
+      <div class="post-item active" id="post-1">
+        <span class="post-index">001</span>
+        <h3 class="post-title">His mother had always taught him</h3>
+        <p class="post-body truncate-2">His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto, but somewhere along the way things started to feel different.</p>
+        <div class="post-meta">
+          <span class="post-reactions">42 reactions</span>
+          <span class="post-tags">history, crime</span>
+        </div>
+      </div>
+
+      <div class="post-item" id="post-2">
+        <span class="post-index">002</span>
+        <h3 class="post-title">He was an expert but not in a good way</h3>
+        <p class="post-body truncate-2">He was an expert but not in a good way. His skills were unmatched, but they were skills that most people would rather not see put to use.</p>
+        <div class="post-meta">
+          <span class="post-reactions">17 reactions</span>
+          <span class="post-tags">mystery, thriller</span>
+        </div>
+      </div>
+
+      <div class="post-item" id="post-3">
+        <span class="post-index">003</span>
+        <h3 class="post-title">Physics is what we call two chunks</h3>
+        <p class="post-body truncate-2">Physics is what we call two chunks of concepts that have been squished together with a lot of math in between them, and then given a fancy name.</p>
+        <div class="post-meta">
+          <span class="post-reactions">8 reactions</span>
+          <span class="post-tags">science, education</span>
+        </div>
+      </div>
+
+    </aside>
+
+    <section id="postDetail">
+      <span class="detail-index">001</span>
+      <h2 class="detail-title">His mother had always taught him</h2>
+      <div class="detail-meta">
+        <span class="detail-reactions">42 reactions</span>
+        <span class="detail-views">1,204 views</span>
+        <span class="detail-tags">history, crime</span>
+      </div>
+      <p class="detail-body">His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto, but somewhere along the way things started to feel different. Maybe it was the job, or maybe it was the way people started asking his opinion before making their own decisions. Whatever the reason, he could feel a distance growing between the man he used to be and the man he was slowly becoming, and he wasn't sure yet whether that was something to fight or something to accept.</p>
+
+    </section>
+
+  </main>
+<script src="app.js"></script>
+</body>
+</html>
