@@ -1,75 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dispatch — post explorer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post Explorer</title>
 </head>
+
 <body>
-
-   
-  <nav class="navbar">
-    <div class="logo-group">
-      <span class="logo-name">Dispatch</span>
-      <span class="logo-tagline">/ post explorer</span>
-    </div>
-
-    <input type="text" id="searchInput" placeholder="Search posts...">
-  </nav>
-
-  <main class="main">
-
-    <aside id="postList">
-
- 
-      <div class="post-item active" id="post-1">
-        <span class="post-index">001</span>
-        <h3 class="post-title">His mother had always taught him</h3>
-        <p class="post-body truncate-2">His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto, but somewhere along the way things started to feel different.</p>
-        <div class="post-meta">
-          <span class="post-reactions">42 reactions</span>
-          <span class="post-tags">history, crime</span>
+  <div class="root">
+    <header
+      class="sm:h-18 bg-navbar text-white flex sm:justify-between sm:items-center sm:flex-row sm:px-4 sm:gap-0 h-25 flex-col justify-center gap-2 items-center border-b border-border shadow-[0_1px_8px_rgba(0,0,0,0.18)]">
+      <div class="logo flex sm:items-center sm:w-auto w-full items-start">
+        <img src="src/assets/logo.png" alt="Logo">
+        <div class="logoName text-subtitle sm:text-logo   flex  justify-center items-center gap-2 font-semibold  ">
+          Dispatch <span class="text-base mt-1">/ post explorer</span>
         </div>
       </div>
-
-      <div class="post-item" id="post-2">
-        <span class="post-index">002</span>
-        <h3 class="post-title">He was an expert but not in a good way</h3>
-        <p class="post-body truncate-2">He was an expert but not in a good way. His skills were unmatched, but they were skills that most people would rather not see put to use.</p>
-        <div class="post-meta">
-          <span class="post-reactions">17 reactions</span>
-          <span class="post-tags">mystery, thriller</span>
+      <div class="searchBar sm:w-[40%] sm:lg:w-[30%] w-[90%] ">
+        <input id="searchInput" type="text" placeholder="Search Posts..."
+          class="border border-border rounded w-[100%] h-9 pl-2 outline-none">
+      </div>
+    </header>
+    <main class=" w-full sm:h-[calc(100vh-72px)] h-[calc(100vh-100px)] bg-bg flex overflow-x-hidden">
+      <aside class="w-[28%] bg-surface max-h-full rounded-tr-3xl overflow-y-scroll px-4 py-6 flex flex-col gap-2">
+        <div
+          class="sideBarCard bg-sidebar-card hover:bg-sidebar-card-hover border border-sidebar-border shadow-card hover:shadow-card-hover pl-3.5 py-2 transition duration-500 rounded-2xl">
+          <span class="text-small font-semibold bg-blue p-1 px-2.5 rounded">1</span>
+          <p class="text-card-title font-heading text-text font-semibold mt-2 w-[82%] truncate">His mother had always
+            taught him</p>
+          <p class="text-small text-text-light w-[90%]  line-clamp-3">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Mollitia dolor soluta quia libero dicta accusamus beatae quasi illum! Blanditiis, amet. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Error nostrum nemo laudantium?</p>
+          <div class=" mt-3 flex justify-between pr-2">
+            <span class="text-blue font-semibold"><i class="fa-solid fa-heart text-[14px] mr-0.5"></i>192 likes</span>
+            <button
+              class="h-8 w-8 rounded border-card border hover:bg-blue transition duration-400 text-text-light hover:text-[#36454F]"><i
+                class="fa-solid fa-arrow-right   text-xl "></i></button>
+          </div>
         </div>
-      </div>
-
-      <div class="post-item" id="post-3">
-        <span class="post-index">003</span>
-        <h3 class="post-title">Physics is what we call two chunks</h3>
-        <p class="post-body truncate-2">Physics is what we call two chunks of concepts that have been squished together with a lot of math in between them, and then given a fancy name.</p>
-        <div class="post-meta">
-          <span class="post-reactions">8 reactions</span>
-          <span class="post-tags">science, education</span>
+      </aside>
+      <section class="w-[72%] h-full flex items-center p-6">
+        <div class="postDetails h-full border border-post-border rounded-xl bg-card shadow-card  relative">
+          <div class="detailsHeader p-8">
+            <span
+              class="text-small font-bold text-blue uppercase tracking-widest bg-sidebar-card-hover p-1 rounded px-2">POST
+              #1</span>
+            <p class="font-heading text-title text-title-text leading-tight">His mother had always taught him</p>
+            <div class="flex items-center gap-4 text-small text-meta-text font-medium">
+              <span class="font-semibold"><i class="fa-solid fa-heart text-[14px] mr-0.5 text-blue"></i>192 likes</span>
+              <span class=" font-semibold"><i class="fa-solid fa-thumbs-down text-[14px] mr-0.5 text-blue"></i>192
+                Dislikes</span>
+              <span><i class="fa-regular fa-eye text-blue"></i> 305 views</span>
+              <span><i class="fa-solid fa-tag text-blue"></i></span>
+            </div>
+          </div>
+          <hr class="h-0.5 bg-post-divider">
+          <div class="postBody text-body-text text-body leading-6 p-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea, exercitationem dolorem nostrum omnis
+            iure quasi. Placeat doloribus provident odit! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Accusamus, explicabo.
+          </div>
+          <div
+            class=" w-full postFooter text-small text-meta-text absolute bottom-2 flex justify-around border-t pt-3 border-post-divider">
+            <div class="flex items-center gap-3 font-semibold">
+              <span><i class="fa-regular fa-calendar-days text-[18px]"></i></span>
+              <div class="flex flex-col">
+                <span>Published on</span>
+                <span>May 30,2026</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 font-semibold">
+              <span><i class="fa-regular fa-clock text-[18px]"></i></span>
+              <div class="flex flex-col">
+                <span>Reading time</span>
+                <span>2 min read</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-    </aside>
-
-    <section id="postDetail">
-      <span class="detail-index">001</span>
-      <h2 class="detail-title">His mother had always taught him</h2>
-      <div class="detail-meta">
-        <span class="detail-reactions">42 reactions</span>
-        <span class="detail-views">1,204 views</span>
-        <span class="detail-tags">history, crime</span>
-      </div>
-      <p class="detail-body">His mother had always taught him not to ever think of himself as better than others. He'd tried to live by this motto, but somewhere along the way things started to feel different. Maybe it was the job, or maybe it was the way people started asking his opinion before making their own decisions. Whatever the reason, he could feel a distance growing between the man he used to be and the man he was slowly becoming, and he wasn't sure yet whether that was something to fight or something to accept.</p>
-
-    </section>
-
-  </main>
-<script src="app.js"></script>
+      </section>
+    </main>
+  </div>
+  <!-- <script type="module" src="/src/main.js"></script> -->
 </body>
+
 </html>

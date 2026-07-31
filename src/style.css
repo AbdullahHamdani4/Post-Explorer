@@ -1,0 +1,103 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap");
+ @theme {
+
+  --font-heading: "DM Serif Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  --text-logo: 2rem;
+  --text-title: 3.3rem;
+  --text-subtitle: 1.5rem;
+  --text-card-title: 1.2rem;
+  --text-body: 1rem;
+  --text-small: .8rem;
+  --text-xs: .8rem;
+
+  --color-bg: #09111E;
+  --color-navbar: #0B1220;
+  --color-surface: #101827;
+  --color-card: #111B2B;
+
+  --color-sidebar-card: #162233;
+  --color-sidebar-card-hover: #1B2A3D;
+  --color-sidebar-card-active: #1D2F46;
+  --color-sidebar-border: #263348;
+
+  --color-text: #F4F6FA;
+  --color-text-light: #A4AEC3;
+  --color-text-muted: #6F7D94;
+
+  --color-title-text: #F4F6FA;
+  --color-body-text: #D6DEE9;
+  --color-meta-text: #A4AEC3;
+  --color-meta-icon: #31B8FF;
+
+  --color-post-border: #202C3F;
+  --color-post-divider: #2B3A4F;
+
+  --color-tag-bg: #28204C;
+  --color-tag-text: #B68DFF;
+
+  --color-link: #31B8FF;
+  --color-link-hover: #55C8FF;
+
+  --color-button: #31B8FF;
+  --color-button-hover: #1D9BFF;
+
+  --color-like: #FFB347;
+  --color-view: #31B8FF;
+
+  --color-blue: #31B8FF;
+  --color-blue-light: #55C8FF;
+  --color-blue-dark: #1D9BFF;
+
+  --color-orange: #FFB347;
+  --color-orange-light: #FFC86B;
+
+  --color-purple: #B68DFF;
+  --color-purple-bg: #28204C;
+
+  --color-success: #43D17C;
+  --color-danger: #FF5C73;
+
+  --color-border: #202C3F;
+
+  --radius-sm: .625rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 999px;
+
+  --shadow-card: 0 8px 30px rgba(0,0,0,.35);
+
+  --shadow-card-hover:
+    0 0 0 1px rgba(49,184,255,.35),
+    0 15px 35px rgba(0,0,0,.45);
+
+}
+aside::-webkit-scrollbar{
+    width: 8px;
+}
+
+aside::-webkit-scrollbar-track{
+    background: #101827;
+    border-radius: 999px;
+}
+
+aside::-webkit-scrollbar-thumb{
+    background: linear-gradient(
+        180deg,
+        #31B8FF,
+        #1D9BFF
+    );
+    border-radius: 999px;
+    border: 2px solid #101827;
+}
+
+aside::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(
+        180deg,
+        #55C8FF,
+        #31B8FF
+    );
+}
