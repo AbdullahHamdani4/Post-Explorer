@@ -8,10 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
     integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Post Explorer</title>
 </head>
@@ -19,7 +16,7 @@
 <body>
   <div class="root">
     <header
-      class="sm:h-18 bg-navbar text-white flex sm:justify-between sm:items-center sm:flex-row sm:px-4 sm:gap-0 h-25 flex-col justify-center gap-2 items-center border-b border-border shadow-[0_1px_8px_rgba(0,0,0,0.18)]">
+      class="w-full sm:h-18 bg-navbar text-white flex sm:justify-between sm:items-center sm:flex-row sm:px-4 sm:gap-0 h-25 flex-col justify-center gap-2 items-center border-b border-border shadow-[0_1px_8px_rgba(0,0,0,0.18)]">
       <div class="logo flex sm:items-center sm:w-auto w-full items-start">
         <img src="src/assets/logo.png" alt="Logo">
         <div class="logoName text-subtitle sm:text-logo   flex  justify-center items-center gap-2 font-semibold  ">
@@ -31,8 +28,8 @@
           class="border border-border rounded w-[100%] h-9 pl-2 outline-none">
       </div>
     </header>
-    <main class=" w-full sm:h-[calc(100vh-72px)] h-[calc(100vh-100px)] bg-bg flex overflow-x-hidden">
-      <aside class="w-[28%] bg-surface max-h-full rounded-tr-3xl overflow-y-scroll px-4 py-6 flex flex-col gap-2">
+    <main class=" w-full sm:h-[calc(100vh-72px)] h-[calc(100vh-100px)] bg-bg flex overflow-x-hidden ">
+      <aside class="w-full lg:w-[28%] bg-surface max-h-full rounded-tr-3xl overflow-y-scroll px-4 py-6 flex flex-col gap-2">
         <div
           class="sideBarCard bg-sidebar-card hover:bg-sidebar-card-hover border border-sidebar-border shadow-card hover:shadow-card-hover pl-3.5 py-2 transition duration-500 rounded-2xl">
           <span class="text-small font-semibold bg-blue p-1 px-2.5 rounded">1</span>
@@ -49,8 +46,8 @@
           </div>
         </div>
       </aside>
-      <section class="w-[72%] h-full flex items-center p-6">
-         <p class="text-title-text w-full text-center text-subtitle">• Click the arrow on a post to view its details</p>
+      <section class="hidden lg:w-[72%] h-full lg:flex p-6 flex flex-col items-start gap-2 overflow-y-scroll">
+        <p class="text-title-text w-full text-center text-subtitle">• Click the arrow on a post to view its details</p>
       </section>
     </main>
   </div>
